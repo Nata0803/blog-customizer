@@ -15,6 +15,7 @@ import { RadioGroup } from 'src/ui/radio-group';
 import { Select } from 'src/ui/select';
 
 import styles from './ArticleParamsForm.module.scss';
+import { Separator } from 'src/ui/separator';
 
 interface ArticleParamsFormProps {
 	isOpen: boolean;
@@ -30,7 +31,7 @@ export const ArticleParamsForm = ({
 	onSubmit,
 	onReset,
 }: ArticleParamsFormProps) => {
-	const containerRef = useRef<HTMLDivElement | null>(null);
+	const containerRef = useRef<HTMLElement | null>(null);
 	const buttonRef = useRef<HTMLDivElement | null>(null);
 
 	const [selectedFont, setSelectedFont] = useState<OptionType>(
@@ -118,6 +119,9 @@ export const ArticleParamsForm = ({
 						options={fontColors}
 						onChange={setSelectedFontColor}
 					/>
+
+					<Separator />
+
 					<Select
 						title='цвет фона'
 						selected={selectedBackgroundColor}

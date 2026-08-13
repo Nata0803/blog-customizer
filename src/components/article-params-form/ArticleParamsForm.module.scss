@@ -36,37 +36,6 @@
 	text-transform: uppercase;
 }
 
-.label {
-	display: flex;
-	flex-direction: column;
-	gap: 4px;
-	margin-block-end: 50px;
-}
-
-.labelLine {
-	padding-block-start: 50px;
-	border-block-start: 1px solid #d7d7d7;
-}
-
-.optionTitle {
-	color: #000000;
-	font-weight: 800;
-	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: extrabold;
-	text-transform: uppercase;
-}
-
-.select {
-	padding-inline: 24px 12px;
-	color: #000000;
-	font-weight: 400;
-	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: regular;
-	padding-block: 12px;
-}
-
 .bottomContainer {
 	display: flex;
 	justify-content: space-between;
